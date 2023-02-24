@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821907914668",
+    "project_id": "e-ticket-96dd5",
+    "storage_bucket": "e-ticket-96dd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821907914668:android:59411e9d1fcdaae4870409",
+        "android_client_info": {
+          "package_name": "com.example.e_ticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821907914668-6434sgvftg7u77gvia7gfa3kllmh0j2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCopOfNqEUJ1n7LKsgI11EPl9lXlSN874Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821907914668-6434sgvftg7u77gvia7gfa3kllmh0j2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

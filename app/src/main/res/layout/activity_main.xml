@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    android:background="@drawable/login_background"
+    tools:context=".Activities.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Ticket"
+        android:id="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/app_name"
+    android:layout_marginTop="130dp"
+    android:id="@+id/layer1">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Book ticket"
+        android:id="@+id/bookTicket"
+        android:background="@drawable/main_activity_book_button_background"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@id/bookTicket"
+        android:text="Show ticket"
+        android:id="@+id/showTicket"
+        android:background="@drawable/main_activity_show_button_background"
+        android:layout_marginStart="10dp"
+        />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/layer2"
+    android:layout_below="@id/layer1">
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="PNR status"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/bookTicket"
+        android:id="@+id/PNR_status"
+        android:background="@drawable/main_activity_pnr_button_background"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Train Enquiry"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/showTicket"
+        android:layout_toRightOf="@id/PNR_status"
+        android:id="@+id/train_enquiry"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/main_activity_train_enq_background"/>
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layer3"
+    android:layout_marginTop="40dp"
+    android:layout_below="@id/layer2"
+    android:layout_marginStart="40dp"
+    android:orientation="horizontal"
+    android:layout_marginEnd="40dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layer2"
+        android:id="@+id/Btn_logout"
+        android:padding="20dp"
+        android:background="@drawable/login_background1"
+        android:text="LOGOUT"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
+
+</RelativeLayout>
