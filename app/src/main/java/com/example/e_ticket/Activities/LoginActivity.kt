@@ -65,8 +65,4 @@ class LoginActivity : AppCompatActivity() {
         super.onBackPressed()
         finish()
     }
-
-
-
-
 }

@@ -17,184 +17,171 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer1"
-        android:layout_marginTop="50dp"
-        android:layout_below="@id/book_ticket">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/book_ticket"
             android:text="FULL NAME:"
-            android:id="@+id/name"
+            android:id="@+id/txt_name"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             />
 
         <EditText
-            android:id="@+id/ED_name"
+            android:id="@+id/et_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="5dp"
             android:background="#70D1CFCF"
             android:hint="Enter Full Name"
             android:padding="10dp"
             android:textColorHint="#50FFFFFF" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer2"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/layer1">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MOBILE NUMBER:"
-            android:id="@+id/mobile_number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_mobileNumber"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_name"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ED_mobile_number"
+            android:id="@+id/et_mobileNumber"
             android:hint="Enter Mobile Number"
+            android:layout_marginTop="5dp"
             android:textColorHint="#50FFFFFF"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             android:background="#70D1CFCF"
             android:padding="10dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/txt_mobileNumber"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer3"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/layer2">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" STARTING:"
-            android:id="@+id/starting_point"
+            android:text=" STARTING STATION:"
+            android:id="@+id/txt_startingPoint"
+            android:layout_marginTop="5dp"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_mobileNumber"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ED_starting"
+            android:id="@+id/et_starting"
+            android:layout_below="@+id/txt_startingPoint"
             android:hint="Source Station"
             android:textColorHint="#50FFFFFF"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             android:background="#70D1CFCF"
+            android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer4"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/layer3">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="DESTINATION:"
-            android:id="@+id/destination"
+            android:text="DESTINATION STATION:"
+            android:id="@+id/txt_destination"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_starting"
+            android:layout_marginTop="5dp"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ED_destination"
+            android:id="@+id/et_destination"
             android:hint="Destination Station"
             android:textColorHint="#50FFFFFF"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             android:background="#70D1CFCF"
             android:padding="10dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/txt_destination"
+            android:layout_marginTop="5dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer5"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/layer4">
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AADHAR NUMBER:"
-            android:id="@+id/aadharNumber"
+            android:id="@+id/txt_aadharNumber"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
+            android:layout_below="@+id/et_destination"
+            android:layout_marginTop="5dp"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ED_aadhar_number"
+            android:id="@+id/et_aadharNumber"
             android:hint="Enter Aadhar Number"
             android:textColorHint="#50FFFFFF"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             android:background="#70D1CFCF"
             android:padding="10dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/txt_aadharNumber"
+            android:layout_marginTop="5dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layer6"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/layer5"
-        >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DOB(dd/mm/yyyy):"
-            android:id="@+id/DOB"
+            android:id="@+id/txt_DOB"
             android:textSize="15sp"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
+            android:layout_below="@id/et_aadharNumber"
+            android:layout_marginTop="5dp"
             />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ED_age"
+            android:id="@+id/et_dob"
             android:hint="Enter DOB"
             android:textColorHint="#50FFFFFF"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             android:background="#70D1CFCF"
             android:padding="10dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/txt_DOB"
+            android:layout_marginTop="5dp"
             />
-    </LinearLayout>
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bookTicket"
             android:text="BOOK TICKET"
             android:textColor="@color/white"
-            android:layout_below="@id/layer6"
-            android:layout_marginTop="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
             android:background="@color/black"
-            android:padding="30dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"/>
+            android:padding="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
 </RelativeLayout>
