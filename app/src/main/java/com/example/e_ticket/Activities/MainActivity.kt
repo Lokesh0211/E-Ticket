@@ -3,14 +3,11 @@ package com.example.e_ticket.Activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
-import com.example.e_ticket.Fragments.BookTicketFragment
 import com.example.e_ticket.Fragments.PNRStatusFragment
 import com.example.e_ticket.Fragments.ShowTicketFragment
 import com.example.e_ticket.Fragments.TrainEnquiryFragment
 import com.example.e_ticket.R
-import com.example.e_ticket.databinding.ActivityLoginBinding
 import com.example.e_ticket.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
