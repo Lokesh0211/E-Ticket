@@ -20,10 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.bookTicket.setOnClickListener {
-           val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.activity_main, BookTicketFragment())
-            transaction.addToBackStack("bookTicket")
-            transaction.commit()
+           val intent =  Intent(this@MainActivity, BookTicketActivity::class.java)
+            startActivity(intent)
         }
         binding.showTicket.setOnClickListener {
             val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()

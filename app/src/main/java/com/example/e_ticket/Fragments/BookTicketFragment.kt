@@ -22,22 +22,23 @@ class BookTicketFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_book_ticket, container, false)
         val db = Firebase.firestore
-        val Fname = view.findViewById<EditText>(R.id.et_name).text.toString().trim()
-        val mobileNumber = view.findViewById<EditText>(R.id.et_mobileNumber).text.toString().trim()
-        val startingStation = view.findViewById<EditText>(R.id.et_starting).text.toString().trim()
-        val destinationStation = view.findViewById<EditText>(R.id.et_destination).text.toString().trim()
-        val aadharNumber = view.findViewById<EditText>(R.id.et_aadharNumber).text.toString().trim()
-        val dob = view.findViewById<EditText>(R.id.et_dob).text.toString().trim()
-        val det = hashMapOf(
-            "Full Name" to Fname,
-            "Mobile Number" to mobileNumber,
-            "Starting Station" to startingStation,
-            "Destination Station" to destinationStation,
-            "Aadhar Number" to aadharNumber,
-            "Date of Birth" to dob
-        )
+
         val button = view.findViewById<Button>(R.id.bookTicket)
         button.setOnClickListener {
+            val Fname = view.findViewById<EditText>(R.id.et_name).text.toString().trim()
+            val mobileNumber = view.findViewById<EditText>(R.id.et_mobileNumber).text.toString().trim()
+            val startingStation = view.findViewById<EditText>(R.id.et_starting).text.toString().trim()
+            val destinationStation = view.findViewById<EditText>(R.id.et_destination).text.toString().trim()
+            val aadharNumber = view.findViewById<EditText>(R.id.et_aadharNumber).text.toString().trim()
+            val dob = view.findViewById<EditText>(R.id.et_dob).text.toString().trim()
+            val det = hashMapOf(
+                "Full Name" to Fname,
+                "Mobile Number" to mobileNumber,
+                "Starting Station" to startingStation,
+                "Destination Station" to destinationStation,
+                "Aadhar Number" to aadharNumber,
+                "Date of Birth" to dob
+            )
             val userid = FirebaseAuth.getInstance().currentUser!!.uid
             db.collection("user").document(userid).set(det)
                 .addOnSuccessListener {
