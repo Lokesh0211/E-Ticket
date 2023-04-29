@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
-import com.example.e_ticket.Fragments.PNRStatusFragment
-import com.example.e_ticket.Fragments.ShowTicketFragment
 import com.example.e_ticket.Fragments.TrainEnquiryFragment
 import com.example.e_ticket.R
 import com.example.e_ticket.databinding.ActivityMainBinding
@@ -21,16 +19,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.showTicket.setOnClickListener {
-            val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.activity_main, ShowTicketFragment())
-            transaction.addToBackStack("showTicket")
-            transaction.commit()
+            val intent =  Intent(this@MainActivity, DisplayTicketActivity::class.java)
+            startActivity(intent)
         }
         binding.PNRStatus.setOnClickListener {
-            val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
+           /* val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
             transaction.replace(R.id.activity_main, PNRStatusFragment())
             transaction.addToBackStack("PNRStatus")
-            transaction.commit()
+            transaction.commit()*/
         }
         binding.trainEnquiry.setOnClickListener {
             val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
