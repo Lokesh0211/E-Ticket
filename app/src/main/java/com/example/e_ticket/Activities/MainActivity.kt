@@ -22,11 +22,13 @@ class MainActivity : AppCompatActivity() {
             val intent =  Intent(this@MainActivity, DisplayTicketActivity::class.java)
             startActivity(intent)
         }
-        binding.PNRStatus.setOnClickListener {
+        binding.fareCalculator.setOnClickListener {
            /* val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
             transaction.replace(R.id.activity_main, PNRStatusFragment())
             transaction.addToBackStack("PNRStatus")
             transaction.commit()*/
+            val intent =  Intent(this@MainActivity, FareCalculatorActivity::class.java)
+            startActivity(intent)
         }
         binding.trainEnquiry.setOnClickListener {
             val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()

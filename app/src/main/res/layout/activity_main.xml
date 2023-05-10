@@ -54,10 +54,10 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:text="PNR status"
+        android:text="fARE CALCULATOR"
         android:layout_marginTop="10dp"
         android:layout_below="@id/bookTicket"
-        android:id="@+id/PNR_status"
+        android:id="@+id/fareCalculator"
         android:background="@drawable/main_activity_pnr_button_background"
         />
     <Button
@@ -66,7 +66,7 @@
         android:text="Train Enquiry"
         android:layout_marginTop="10dp"
         android:layout_below="@id/showTicket"
-        android:layout_toRightOf="@id/PNR_status"
+        android:layout_toRightOf="@id/fareCalculator"
         android:id="@+id/train_enquiry"
         android:layout_marginStart="10dp"
         android:background="@drawable/main_activity_train_enq_background"/>
