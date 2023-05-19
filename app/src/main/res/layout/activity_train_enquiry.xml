@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".Activities.TrainEnquiryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRAIN ENQUIRY"
+        android:id="@+id/trainEnquiry"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txt_enter_train_number"
+        android:text="Enter Train number:  "
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/trainEnquiry"
+        android:layout_marginTop="130dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTrainNumberOne"
+        android:layout_below="@+id/txt_enter_train_number"
+        android:layout_marginTop="15dp"
+        android:background="#70D1CFCF"
+        android:hint="Enter train number"
+        android:textColorHint="#50FFFFFF"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showTrainDetails"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:layout_below="@+id/etTrainNumberOne"
+        android:padding="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/showTrainDetails">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt_from"
+            android:text="From : "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/ticketDetails"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/linear1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt_to"
+            android:text="To : "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/linear2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt_diatance"
+            android:text="Distance (Kms) : "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@+id/linear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/txt_travel_time"
+            android:text="Time (hrs) : "
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTravelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

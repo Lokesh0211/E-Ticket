@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
-import com.example.e_ticket.Fragments.TrainEnquiryFragment
 import com.example.e_ticket.R
 import com.example.e_ticket.databinding.ActivityMainBinding
 
@@ -31,14 +30,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.trainEnquiry.setOnClickListener {
-            val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
+          /*  val transaction : FragmentTransaction =  supportFragmentManager.beginTransaction()
             transaction.replace(R.id.activity_main, TrainEnquiryFragment())
             transaction.addToBackStack("trainEnquiry")
-            transaction.commit()
+            transaction.commit()*/
+            val intent =  Intent(this@MainActivity, TrainEnquiryActivity::class.java)
+            startActivity(intent)
         }
         binding.BtnLogout.setOnClickListener {
             val intent = Intent(this@MainActivity, LoginActivity()::class.java)
             startActivity(intent)
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 }
